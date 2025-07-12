@@ -1,7 +1,7 @@
 #!/bin/bash
 
 declare SongsFolder="songs"
-declare SongList=("Surface.mp3" "ATSOL.mp3" "DarkMatterSuite.mp3" "Menace.mp3" "Stalemate.mp3" "DryOut.mp3")
+declare SongList=("FlawlessWingsofYatagarasu.mp3" "Surface.mp3" "ATSOL.mp3" "DarkMatterSuite.mp3" "Menace.mp3" "Stalemate.mp3" "DryOut.mp3")
 
 echo "Enter song name or ID: "
 read sid
