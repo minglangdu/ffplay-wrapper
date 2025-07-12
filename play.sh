@@ -19,6 +19,6 @@ else
 	fi
 fi # I love how this is the closing for "if"
 
-ffplay -loop 0 -i -volume 8 "${SongsFolder}/${sname}"
+ffplay -vn -loop 0 -i -volume 8 "${SongsFolder}/${sname}"
 exit 0
 
