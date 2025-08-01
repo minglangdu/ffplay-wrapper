@@ -1,7 +1,6 @@
 #!/bin/bash
 
 declare SongsFolder="songs"
-#declare SongList=("TimeLeaper.mp3" "Isolation.mp3" "YouAndMe.mp3" "Retrospective.mp3" "FlawlessWingsofYatagarasu.mp3" "Surface.mp3" "ATSOL.mp3" "DarkMatterSuite.mp3" "Menace.mp3" "Stalemate.mp3" "DryOut.mp3")
 declare SongList=()
 for file in "$SongsFolder"/*; do
 	if [[ $file =~ \. ]]; then
@@ -10,9 +9,10 @@ for file in "$SongsFolder"/*; do
 done
 
 echo "Song Library: "
-for i in $(seq 1 10);
+for i in "${!SongList[@]}";
 do
-	echo "$i. ${SongList[i - 1]}"
+	declare -i num=i+1
+	echo "$num. ${SongList[i]}"
 done
 
 echo "Enter song name or ID: "
